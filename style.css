@@ -1,4 +1,143 @@
-p {
-  font-size: 25px;
-  color: blue;
+* {
+   box-sizing: border-box;
+}
+
+body {
+   color:#7b4fab;
+   font-size: 1em;
+   font-family: "Open Sans", "Helvetica Neue", sans-serif;
+
+}
+::selection {
+  background: #76fee3;
+}
+
+a {
+   font-weight: bold;
+   text-decoration: none;
+   color: #fe9476;
+}
+a:hover {
+   /* Typhography Declarations*/
+   color: #a6fe76;
+}
+a:visied {
+   /* Typhography Declarations*/
+   color: #76c8fe;
+}
+.masthead,
+.introduction,
+.location,
+.questions,
+.content-footer {
+   padding-left: 2em;
+   padding-right: 2em;
+}
+
+.masthead-intro,
+.masthead-heading,
+.content-footer > p,
+.social {
+   text-align: center;
+}
+
+.introduction,
+.location,
+.questions {
+   max-width: 38em;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.introduction > p,
+.location > p,
+.content-footer > p, {
+   font-weight: 300;
+   letter-spacing: 0.05em;
+}
+
+.masthead {
+   padding: 6em 0;
+   background-image: url('http://wallpaper-gallery.net/images/hd-wallpapers-background/hd-wallpapers-background-17.jpg');
+   background-repeat: no-repet;
+   background-size: cover;
+   border-top: solid 1em #ba76fe;
+}
+.masthead-intro {
+	/* Layout Declarations */
+	margin-bottom: 0.1em;
+	/* Typography Declarations */
+	color: #FFFFFF;
+	font-family: "Gentium Book Basic", Georgia, serif;
+	font-size: 2em;
+}
+
+.masthead-heading {
+	/* Layout Declarations */
+	margin-top: -0.2em;
+	/* Typography Declarations */
+	color: #FFF1C2;
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 6em;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	text-shadow: 0px 3px 0px #FFCF33;
+}
+
+.heading {
+	/* Layout Declarations */
+	max-width: 19em;
+	margin-top: 2em;
+}
+
+.question {
+	/* Layout Declarations */
+	margin: 2em 0 1em 0;
+	/* Typography Declarations */
+	color: #FFCF33;
+	font-family: "Gentium Book Basic", Georgia, serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.answer {
+	/* Layout Declarations */
+	margin-left: 0em;
+}
+
+.content-footer {
+	/* Layout Declarations */
+	margin-top: 5em;
+	padding: 4em 0;
+	/* Appearance Rules */
+	background-color: #594F49;
+}
+
+.content-footer > p {
+  /* Typography Declarations */
+  color: white;
+}
+
+.social {
+	/* Layout Declarations */
+	padding: 0;
+	/* Appearance Declarations */
+	list-style: none;
+}
+
+.social > li {
+	/* Layout Declarations */
+	display: inline-block;
+	margin-right: 1em;
+}
+
+@media screen and (max-width: 500px) {
+  .masthead {
+    padding:  3em 0;
+  }
+  .masthead-heading {
+    font-size: 3em;
+  }
 }
